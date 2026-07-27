@@ -1,0 +1,56 @@
+generated: '2026-07-19'
+method: searched
+source: >-
+  PyPI, npm, and the github.com/humio organization repositories (first-party
+  Humio / Falcon LogScale client libraries).
+packages:
+  - language: python
+    registry: pypi
+    name: humiolib
+    url: https://pypi.org/project/humiolib/
+    repository: https://github.com/humio/python-humio
+    docs: https://python-humio.readthedocs.io/
+    install: pip install humiolib
+    version: 0.2.6
+    description: Python SDK for connecting to Humio (ingest, search, management).
+    official: true
+  - language: javascript
+    registry: npm
+    name: humio
+    url: https://www.npmjs.com/package/humio
+    repository: https://github.com/humio/humio-node
+    install: npm install humio
+    version: 0.4.0-beta2
+    description: Log to Humio from Node.js.
+    official: true
+  - language: javascript
+    registry: github
+    name: humio-js
+    url: https://github.com/humio/humio-js
+    install: (from source) https://github.com/humio/humio-js
+    description: JavaScript client for Humio.
+    official: true
+  - language: javascript
+    registry: github
+    name: humio.js
+    url: https://github.com/humio/humio.js
+    install: (from source) https://github.com/humio/humio.js
+    description: Log JavaScript errors to Humio from the browser.
+    official: true
+  - language: go
+    registry: pkg.go.dev
+    name: github.com/humio/cli
+    url: https://pkg.go.dev/github.com/humio/cli
+    repository: https://github.com/humio/cli
+    install: go install github.com/humio/cli/cmd/humioctl@latest
+    description: >-
+      Go module backing the humioctl CLI (also a Go client library for the
+      Humio API). See cli/humio-cli.yml for the command surface.
+    official: true
+  - language: go
+    registry: github
+    name: humio-operator
+    url: https://github.com/humio/humio-operator
+    install: (Helm) https://github.com/humio/humio-helm-charts
+    description: Kubernetes Operator for running Humio clusters.
+    official: true

@@ -1,0 +1,43 @@
+generated: '2026-07-19'
+method: searched
+source: https://github.com/humio/cli
+name: humioctl
+description: >-
+  Official Humio (Falcon LogScale) command-line client, written in Go. Streams
+  logs to Humio, runs searches, and manages server resources (repositories,
+  parsers, users, ingest tokens) over the Humio REST + GraphQL API.
+repository: https://github.com/humio/cli
+package: github.com/humio/cli/cmd/humioctl
+install:
+  - method: homebrew
+    command: brew install humioctl
+    tap: https://github.com/humio/homebrew-humio
+  - method: snap
+    command: sudo snap install humioctl
+  - method: nix
+    command: nix-env -i humioctl
+  - method: go
+    command: go install github.com/humio/cli/cmd/humioctl@latest
+auth:
+  style: bearer-token
+  note: >-
+    Configured via `humioctl login` (stores Humio URL + personal API token); the
+    token is sent as an Authorization: Bearer header to the Humio API.
+command_surface:
+  - group: ingest
+    summary: Stream/tail files or stdin into a Humio repository.
+    examples:
+      - humioctl ingest --tail=/var/log/system.log
+      - humioctl ingest -label=work-related -tail=/var/log/mysql.log
+  - group: repos
+    summary: List and manage repositories.
+  - group: parsers
+    summary: Manage log parsers.
+  - group: users
+    summary: Manage users and their roles.
+  - group: ingest-tokens
+    summary: Create and manage ingest tokens.
+  - group: login
+    summary: Authenticate the CLI against a Humio server URL with an API token.
+  - group: cluster
+    summary: Inspect cluster nodes and status.

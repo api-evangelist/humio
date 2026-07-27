@@ -1,26 +1,99 @@
 aid: humio
 name: Humio
-description: 'Humio is a company surfaced as a portfolio company of accel and added to the API Evangelist
-  network as a stub for enrichment. Sector: big-data. This profile is a lead awaiting the enrichment pipeline.'
+description: >-
+  Humio is a log management and observability platform built for ingesting,
+  storing, and searching machine data in real time at scale. Backed by Accel and
+  acquired by CrowdStrike in 2021, Humio is now delivered as CrowdStrike Falcon
+  LogScale. It provides high-throughput streaming ingest (including Splunk HEC
+  and Elastic bulk compatible endpoints), a live query language for dashboards
+  and alerts, and index-free retention. Developers integrate through a REST API
+  for ingest and search plus a GraphQL API for administration (repositories,
+  parsers, users, ingest tokens), with official client libraries for Python,
+  Node.js, Go, and JavaScript and the humioctl command-line client.
 url: https://raw.githubusercontent.com/api-evangelist/humio/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://avatars.githubusercontent.com/u/16662354?v=4
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - accel
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-acquired-by: crowdstrike
+x-product: Falcon LogScale
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Big Data
-apis: []
+- Log Management
+- Observability
+- Logging
+- SIEM
+- Monitoring
+- Security
+apis:
+- name: Humio API
+  description: >-
+    Humio (Falcon LogScale) REST + GraphQL API. The REST API covers streaming
+    ingest (structured, unstructured, Splunk HEC, and Elastic bulk endpoints)
+    and search/query jobs against repositories; the GraphQL API covers
+    administration of repositories, parsers, dashboards, alerts, users, and
+    ingest tokens. Authenticated with bearer API/ingest tokens.
+  humanURL: https://library.humio.com/stable/docs/api/
+  baseURL: https://cloud.humio.com/api/v1
+  properties:
+  - type: Documentation
+    url: https://library.humio.com/stable/docs/api/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/humio-domain-security.yml
 - type: Website
-  url: http://www.humio.com
+  url: https://www.humio.com
+- type: Product
+  url: https://www.crowdstrike.com/products/next-gen-siem/falcon-logscale/
+- type: Documentation
+  url: https://library.humio.com/stable/
+- type: APIReference
+  url: https://library.humio.com/stable/docs/api/
+- type: Blog
+  url: https://www.crowdstrike.com/blog/
+- type: GitHubOrganization
+  url: https://github.com/humio
+- type: SDKs
+  url: packages/humio-packages.yml
+- type: Packages
+  url: packages/humio-packages.yml
+- type: CLI
+  url: cli/humio-cli.yml
+- type: WellKnown
+  url: well-known/humio-well-known.yml
+- type: SecurityTxt
+  url: well-known/humio-security.txt
+- type: VulnerabilityDisclosure
+  url: security/humio-vulnerability-disclosure.yml
+- type: Security
+  url: https://www.crowdstrike.com/report-a-security-bug/
+- type: LLMsTxt
+  url: llms/humio-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
