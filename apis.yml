@@ -73,6 +73,11 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/crowdstrike/
+  name: CrowdStrike
+  x-relationship: acquired
+  x-evidence: "Backed by Accel and acquired by CrowdStrike in 2021, Humio is now delivered as CrowdStrike Falcon LogScale."
 - type: DomainSecurity
   url: security/humio-domain-security.yml
 - type: Website
