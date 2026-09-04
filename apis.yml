@@ -33,6 +33,8 @@ accessModel:
   source: []
   generated: '2026-07-22'
   method: derived
+  source:
+  - {url: 'https://www.humio.com', status: 301, note: 'declared website redirects to https://www.crowdstrike.com/en-us/platform/next-gen-siem/falcon-logscale/ — a different registrable domain (humio.com -> crowdstrike.com), possible rename or acquisition (probed 2026-09-03, roadmap#169)'}
 image: https://avatars.githubusercontent.com/u/16662354?v=4
 x-type: company
 x-source: vc-portfolio
