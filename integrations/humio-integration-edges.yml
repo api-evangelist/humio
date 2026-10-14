@@ -3,6 +3,7 @@ method: searched
 checked:
 - https://github.com/open-telemetry/opentelemetry.io/blob/main/data/ecosystem/vendors.yaml
 - https://github.com/open-telemetry/opentelemetry.io/blob/main/data/registry/
+- palo-alto-networks/integrations/palo-alto-networks-integration-edges.yml
 marketplace_apps: []
 edges:
 - partner_name: OpenTelemetry
@@ -28,6 +29,26 @@ edges:
     detected: '2026-10-13'
   detected_by: sweep-observability.py
   detected: '2026-10-13'
+- partner_name: Palo Alto Networks (own)
+  partner: palo-alto-networks
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://cortex.marketplace.pan.dev/marketplace/details/Humio/
+  mirror_of: palo-alto-networks/integrations/palo-alto-networks-integration-edges.yml
+  apps:
+  - Humio
+  listing_count: 1
+  detected: '2026-10-14'
+  detected_by: mirror-platform-listings.py
+  category: Analytics & SIEM
+  badges:
+  - support:partner
+  - certification:certified
 source:
 - https://github.com/open-telemetry/opentelemetry.io/blob/main/data/ecosystem/vendors.yaml
 - https://github.com/open-telemetry/opentelemetry.io/blob/main/data/registry/
