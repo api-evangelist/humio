@@ -64,6 +64,89 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Humio is a company surfaced as a portfolio company of accel and added to the API Evangelist network as a stub for enrichment. Sector: big-data. This profile is a lead awaiting the enrichment pipeline.
+Humio is a log management and observability platform built for ingesting, storing, and searching machine data in real time at scale. Backed by Accel and acquired by CrowdStrike in 2021, Humio is now delivered as CrowdStrike Falcon LogScale. It provides high-throughput streaming ingest (including Splunk HEC and Elastic bulk compatible endpoints), a live query language for dashboards and alerts, and index-free retention. Developers integrate through a REST API for ingest and search plus a GraphQL API for administration (repositories, parsers, users, ingest tokens), with official client libraries for Python, Node.js, Go, and JavaScript and the humioctl command-line client.
 
-Backed by: accel — http://www.humio.com
+**Areas:** Company · Big Data · Log Management · Observability · Logging · SIEM · Monitoring · Security
+
+## Humio on APIs.io
+
+Everything profiled for Humio is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/humio/](https://apis.io/providers/humio/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Humio API](https://apis.io/apis/humio/humio-api/) — Humio (Falcon LogScale) REST + GraphQL API. The REST API covers streaming ingest (structured, unstructured, Splunk HEC, and Elastic bulk endpoints) and…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Humio Domain Security](https://apis.io/security/humio/humio-domain-security/)
+- [Humio Vulnerability Disclosure](https://apis.io/security/humio/humio-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.humio.com)
+- [Documentation](https://library.humio.com/stable/)
+- [API reference](https://library.humio.com/stable/docs/api/)
+- [Blog](https://www.crowdstrike.com/blog/)
+- [Security](https://www.crowdstrike.com/report-a-security-bug/)
+- [GitHub](https://github.com/humio)
+
+## API Evangelist rating
+
+**Kin Score 15.2** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 13.2 |
+| Developer ergonomics | 33.3 |
+| Access clarity | 0.0 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 11.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/humio/](https://apis.io/providers/humio/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Humio: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/humio/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
